@@ -43,5 +43,5 @@ jobs:
         with:
           context: .
           push: true
-          file: Dockerfile-node
+          file: Dockerfile-ansible
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/jenkins-swarm:ansible
