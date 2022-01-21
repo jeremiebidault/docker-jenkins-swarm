@@ -1,0 +1,8 @@
+FROM aarto/ansible:centos-7
+
+RUN yum -y install java-11-openjdk-headless
+
+COPY entrypoint.sh /
+RUN chmod +x /entrypoint.sh
+
+CMD ["/entrypoint.sh"]
